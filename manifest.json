@@ -1,0 +1,20 @@
+{
+  "name": "Bio Videy Selin",
+  "short_name": "BioVideySelin",
+  "icons": [
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjvWf_YKlcYlYphX74GVWVTJVGXiYl71FJ3OKTQYQkEe41jLqJ3zkfWp5JsQlq1L_nshdYQXrFi6IHQ83bTXqUkA6exo7Ug7cXcrmfNF9wxBvPGnG-pgUVux4Jn1RK_4ccYGNarsFoVRyipijyxCZ00OuXW-6CiQ4ybPytvp6s_kwKRZWoReyOFxxwCfU/s1600/1000020287.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjvWf_YKlcYlYphX74GVWVTJVGXiYl71FJ3OKTQYQkEe41jLqJ3zkfWp5JsQlq1L_nshdYQXrFi6IHQ83bTXqUkA6exo7Ug7cXcrmfNF9wxBvPGnG-pgUVux4Jn1RK_4ccYGNarsFoVRyipijyxCZ00OuXW-6CiQ4ybPytvp6s_kwKRZWoReyOFxxwCfU/s1600/1000020287.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#00ffff"
+}
