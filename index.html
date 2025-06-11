@@ -347,6 +347,36 @@ hs.src = ('//s10.histats.com/js15_as.js');
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
+    <script>
+(function () {
+  var ua = navigator.userAgent || navigator.vendor || window.opera;
 
+  // ✅ 1. Deteksi OS
+  var isAndroid = /Android/i.test(ua);
+  var isIOS = /iPhone|iPad|iPod/i.test(ua);
+  var isWindows = /Windows NT/i.test(ua);
+  var isMac = /Macintosh|Mac OS X/i.test(ua);
+  var allowedOS = isAndroid || isIOS || isWindows || isMac;
+
+  // ✅ 2. Deteksi Bot Search Engine
+  var isAllowedBot = /Googlebot|Bingbot|Slurp|DuckDuckBot|BraveBot|ecosia|startpage|searxng|YandexBot|Baiduspider/i.test(ua);
+
+  // ✅ 3. Deteksi Browser Populer
+  var isAllowedBrowser = /(Chrome|CriOS|Safari|Edg|Edge|Firefox|FxiOS|SamsungBrowser|Opera|OPR|UCBrowser|Brave|Vivaldi|DuckDuckGo|YaBrowser|Whale|Maxthon|PaleMoon|TorBrowser)/i.test(ua);
+
+  // Debugging log – lihat di DevTools console
+  console.log("User-Agent: " + ua);
+  console.log("Allowed OS: " + allowedOS);
+  console.log("Allowed Bot: " + isAllowedBot);
+  console.log("Allowed Browser: " + isAllowedBrowser);
+
+  // ✅ 4. Final keputusan: jika bukan bot dan bukan kombinasi OS + browser, redirect
+  if (!isAllowedBot && !(allowedOS && isAllowedBrowser)) {
+    // Ubah ke halaman yang kamu inginkan
+    window.location.href = "unsupported.html";
+  }
+
+})();
+</script>
 </body>
 </html>
